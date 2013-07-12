@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/* Fonts */
+/* Museo Sans is a font by Jos Buivenga (exljbris) -> www.exljbris.nl */
+@font-face { font-family: "MuseoSans-500"; src: url('../fnt/museosans_500.eot'); }
+@font-face { font-family: "MuseoSans-500"; src: url("../fnt/museosans_500.otf") format("opentype"); }
+
+/* Meyers Reset...Take care of oddball cross-browser descrepencies... */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+input, textarea,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: "MuseoSans-500", Georgia, "Times New Roman", Times, serif; vertical-align: baseline; }
+body { line-height: 1em; color: black; background: white; font-size: 62.5%; } /* Set base font to 10px */
+ol, ul { list-style: none; }
+/* tables still need 'cellspacing="0"' in the markup */
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/* clearfix */
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+.clearit { display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+/* Tags */
+
+html, body { height: 100%; margin: 0 0 1px; }
+
+a { color: inherit; text-decoration: none; }
+body { background: #222; color: #333; }
+em { font-style: italic; }
+h1 { font-size: 4.0em; font-weight: bold; letter-spacing: 0.05em; line-height: 60px; }
+h2 { font-size: 4.0em; font-weight: bold; letter-spacing: 0.05em; line-height: 60px; }
+h3 { font-size: 2.0em; font-weight: bold; letter-spacing: 0.05em; line-height: 40px; text-transform: uppercase; }
+h4 { font-size: 1.2em; font-weight: bold; letter-spacing: 0.15em; line-height: 20px; text-transform: uppercase; }
+h5 { font-size: 1.8em; font-weight: normal; letter-spacing: 0.05em; line-height: 20px; text-transform: lowercase; }
+
+/* IDs */
+#bodyContainer { margin: 0 auto; width: 620px; padding-right: 101px; position: relative; }
+
+#callToAction { margin: 10px 0px 0px 0px; display: none; }
+
+#contactContainer { position: absolute; top: -200px; left: 640px; }
+#contactContainer a.googlep { background: url(https://ssl.gstatic.com/images/icons/gplus-64.png) no-repeat center center; display: block; height: 64px; width: 110px; }
+#contactContainer a.twitter { background: url(../img/twitter.png) no-repeat center center; display: block; height: 120px; width: 200px; }
+
+#contentContainer { clear:both; }
+#contentContainer h3 { margin: 0px 0px 0px 200px;}
+#contentContainer h3 span.underline { border-bottom: 2px dotted #333; font: inherit; }
+#contentContainer h4 { color: #c4161c; float: left; padding: 13px 0px 0px 0px; text-align: right; width: 160px; }
+#contentContainer h5 { color: #333; padding: 10px 60px 10px 200px; }
+#contentContainer h5.sectionTitle:hover { padding: 10px 60px 10px 220px; }
+#contentContainer p { font-size: 1.4em; line-height: 20px; padding: 10px 40px 10px 200px; }
+#contentContainer p a { color: #c4161c; }
+#contentContainer a:hover { color: #c4161c; border-bottom: 1px solid #c4161c; }
+#contentContainer .gallery a:hover { border-bottom: none; }
+#contentContainer .vcard { font-size: 1.4em; line-height: 25px; padding: 10px 40px 10px 220px; }
+
+#footerContainer { margin-bottom: 30px; padding-top: 30px; position: relative; }
+#footerContainer p { float: right; padding: 30px 0px; text-align: right; width: 320px; }
+#footerContainer div#ccLicense { padding: 30px 0px; text-align: right; width: 160px; }
+#footerContainer div#ccLicense span.licenseSubtext { display: none; }
+
+#headerContainer { color: #fff; height: 200px; position: relative; margin-top: 30px; }
+#headerContainer h1 { background: #c4161c; padding: 20px 30px 10px  0px; position: absolute; top: 60px; left: 150px; text-align: right; width: 440px; }
+#headerContainer h2 { background: #c4161c; padding: 20px  0px 10px 30px; position: absolute; top: 60px; left: 620px; width: 200px;}
+
+#headerContainer { border-top-right-radius: 40px; -moz-border-radius-topright: 40px; -webkit-border-top-right-radius: 40px; border-top-left-radius: 40px; -moz-border-radius-topleft: 40px; -webkit-border-top-left-radius: 40px; }
+#footerContainer { border-bottom-right-radius: 40px; -moz-border-radius-bottomright: 40px; -webkit-border-bottom-right-radius: 40px; border-bottom-left-radius: 40px; -moz-border-radius-bottomleft: 40px; -webkit-border-bottom-left-radius: 40px; }
+
+/* Classes */
+.mainContainer { background: #eee; padding: 0px 40px; width: 540px; }
+
+.replace { display: none; }
+
+.toggler { padding: 20px 0px; }
+
+/* Portfolio */
+.gallery { padding: 0px 0px 0px 200px; width: 300px; }
+.viewer { width: 300px; position: relative; min-height: 200px; }
+.viewer .toggler { padding: 0px; }
+.navigation { width: 300px; padding-bottom: 2em; }
+.navigation li { display: block; float: left; margin: 0 20px 10px 0px; }
+.navigation li a { display: block; }
+.navigation li a img { display: block; }
+.scroll { height: 840px; overflow: auto; position: relative; /* fix for IE to respect overflow */ clear: left; }
+.scrollContainer div.panel { height: 540px; width: 570px; text-align: center; }
+.scrollButtons { position: absolute; top: 230px; cursor: pointer; }
+.scrollButtons.left { left: -25px; }
+.scrollButtons.right { right: -25px; }

@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.randallagordon\.com$ [NC]
+RewriteRule ^(.*)$ http://randallagordon.com/$1 [L,R=301]
+
+AddType application/octet-stream ipk
+AddType audio/ogg ogg
+
