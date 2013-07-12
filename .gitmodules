@@ -1,0 +1,3 @@
+[submodule "jaraoke"]
+	path = jaraoke
+	url = https://github.com/randallagordon/jaraoke.git
